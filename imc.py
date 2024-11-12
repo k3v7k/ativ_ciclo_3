@@ -48,7 +48,6 @@ class IMCCalculator(wx.Frame):
         result_sizer = wx.StaticBoxSizer(result_box, wx.VERTICAL)
         self.result = wx.StaticText(panel, label="", style=wx.ALIGN_CENTER_VERTICAL)
         result_sizer.Add(self.result, flag=wx.ALIGN_LEFT | wx.RIGHT, border=10)
-        # Ajuste o border para controlar o deslocamento
         hbox3.Add(result_sizer, proportion=1, flag=wx.EXPAND | wx.LEFT, border=10)
         vbox.Add(hbox3, flag=wx.EXPAND | wx.LEFT | wx.RIGHT | wx.TOP, border=10)
 

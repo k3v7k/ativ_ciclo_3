@@ -29,7 +29,6 @@ class IMCCalculator(wx.Frame):
         hbox2.Add(self.txt_address, proportion=1)
         vbox.Add(hbox2, flag=wx.EXPAND | wx.LEFT | wx.RIGHT | wx.TOP, border=10)
 
-        # Altura e Peso e área de resultado
         hbox3 = wx.BoxSizer(wx.HORIZONTAL)
 
         # Entrada de Altura
@@ -86,8 +85,7 @@ class IMCCalculator(wx.Frame):
         self.txt_address.Clear()
         self.txt_height.Clear()
         self.txt_weight.Clear()
-        self.result.SetLabel("")  # Limpa o resultado
-
+        self.result.SetLabel("") 
     def OnExit(self, event):
         self.Close()
 
